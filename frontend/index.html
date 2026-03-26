@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hot Take Board</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hot Takes</h1>
+
+            <div class="input-box">
+                <textarea
+                    id="takeInput"
+                    maxlength="280"
+                    placeholder="Drop your hottest take..."
+                ></textarea>
+                <div class="input-footer">
+                    <span id="charCount">0 / 280</span>
+                    <button id="submitBtn">Post</button>
+                </div>
+            </div>
+
+            <div id="takesContainer"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

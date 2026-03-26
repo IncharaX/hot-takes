@@ -1,0 +1,87 @@
+:root {
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --text: #ffffff;
+    --muted: #888;
+    --accent: #ff4d4d;
+    --radius: 12px;
+    --space: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: var(--space);
+}
+
+h1 {
+    font-family: "DM Mono", monospace;
+}
+
+.input-box {
+    background: var(--card);
+    padding: var(--space);
+    border-radius: var(--radius);
+    margin-bottom: var(--space);
+}
+
+textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    resize: none;
+    height: 80px;
+    outline: none;
+}
+
+.input-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    color: white;
+}
+
+.card {
+    background: var(--card);
+    padding: var(--space);
+    border-radius: var(--radius);
+    margin-bottom: var(--space);
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.4s forwards;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-family: "DM Mono", monospace;
+}
+
+.empty {
+    text-align: center;
+    color: var(--muted);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
